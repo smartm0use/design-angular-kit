@@ -1,6 +1,5 @@
 {% from "../../macro.template.njk" import sanitize as sanitize %}
 
-
 {% set html %}
   {% include "../form-input-example/form-input-example.component.html" %}
 {% endset %}
@@ -26,20 +25,77 @@
 {% endset %}
 
 
-{% set formInputNumberHtml %}
-  {% include "../form-input-number/form-input-number.component.html" %}
+
+
+
+{% set formInputLimitsHtml %}
+  {% include "../form-input-limits/form-input-limits.component.html" %}
 {% endset %}
 
-{% set formInputNumberTs %}
-  {% include "../form-input-number/form-input-number.component.ts" %}
+{% set formInputLimitsTs %}
+  {% include "../form-input-limits/form-input-limits.component.ts" %}
 {% endset %}
 
+<it-form-input-limits-example></it-form-input-limits-example>
 
-
-<it-form-input-number-example></it-form-input-number-example>
-
-<it-source-display html="{$ sanitize(formInputNumberHtml) $}" typescript="{$ sanitize(formInputNumberTs) $}">
+<it-source-display html="{$ sanitize(formInputLimitsHtml) $}" typescript="{$ sanitize(formInputLimitsTs) $}">
 </it-source-display>
+
+
+
+
+
+
+
+
+{% set formInputCurrencyHtml %}
+  {% include "../form-input-currency/form-input-currency.component.html" %}
+{% endset %}
+
+{% set formInputCurrencyTs %}
+  {% include "../form-input-currency/form-input-currency.component.ts" %}
+{% endset %}
+
+<it-form-input-currency-example></it-form-input-currency-example>
+
+<it-source-display html="{$ sanitize(formInputCurrencyHtml) $}" typescript="{$ sanitize(formInputCurrencyTs) $}">
+</it-source-display>
+
+
+
+
+
+
+{% set formInputPercentageHtml %}
+  {% include "../form-input-percentage/form-input-percentage.component.html" %}
+{% endset %}
+
+{% set formInputPercentageTs %}
+  {% include "../form-input-percentage/form-input-percentage.component.ts" %}
+{% endset %}
+
+<it-form-input-percentage-example></it-form-input-percentage-example>
+
+<it-source-display html="{$ sanitize(formInputPercentageHtml) $}" typescript="{$ sanitize(formInputPercentageTs) $}">
+</it-source-display>
+
+
+
+
+
+{% set formInputNumberAdaptiveHtml %}
+  {% include "../form-input-number-adaptive/form-input-number-adaptive.component.html" %}
+{% endset %}
+
+{% set formInputNumberAdaptiveTs %}
+  {% include "../form-input-number-adaptive/form-input-number-adaptive.component.ts" %}
+{% endset %}
+
+<it-form-input-number-adaptive-example></it-form-input-number-adaptive-example>
+
+<it-source-display html="{$ sanitize(formInputNumberAdaptiveHtml) $}" typescript="{$ sanitize(formInputNumberAdaptiveTs) $}">
+</it-source-display>
+
 
 
 

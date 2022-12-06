@@ -13,8 +13,11 @@ import {
 } from './template-driven-validation-example/template-driven-validation-example.component';
 import { ModelDrivenValidationExampleComponent } from './model-driven-validation-example/model-driven-validation-example.component';
 import { FormInputIconExampleComponent } from './form-input-icon/form-input-icon.component';
-import { FormInputNumberExampleComponent } from './form-input-number/form-input-number.component';
+import { FormInputNumberAdaptiveExampleComponent } from './form-input-number-adaptive/form-input-number-adaptive.component';
 import { FormInputCalendarExampleComponent } from './form-input-calendar/form-input-calendar.component';
+import { FormInputCurrencyExampleComponent } from './form-input-currency/form-input-currency.component';
+import { FormInputLimitsExampleComponent } from './form-input-limits/form-input-limits.component';
+import { FormInputPercentageExampleComponent } from './form-input-percentage/form-input-percentage.component';
 
 @NgModule({
   imports: [
@@ -32,8 +35,11 @@ import { FormInputCalendarExampleComponent } from './form-input-calendar/form-in
     FormInputIndexComponent,
     TemplateDrivenValidationExampleComponent,
     ModelDrivenValidationExampleComponent,
-    FormInputNumberExampleComponent,
-    FormInputCalendarExampleComponent
+    FormInputNumberAdaptiveExampleComponent,
+    FormInputCalendarExampleComponent,
+    FormInputCurrencyExampleComponent,
+    FormInputLimitsExampleComponent,
+    FormInputPercentageExampleComponent
   ]
 })
 export class FormInputModule { }

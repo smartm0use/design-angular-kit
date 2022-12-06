@@ -1,4 +1,4 @@
-<div class="form-group" [class.autocomplete-wrapper-big]="autocompleteWrapperSize === 'big'">
+<div  [class.form-group] = "isInputGroup" [class.autocomplete-wrapper-big]="autocompleteWrapperSize === 'big'">
   <div class="input-group" *ngIf = "isInputGroup; else formInputWithLabel">
       <ng-container *ngIf="_textPrefixChildren.length || _prefixChildren.length || icon">
         <div class="input-group-prepend">
